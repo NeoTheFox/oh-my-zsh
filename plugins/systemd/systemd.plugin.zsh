@@ -10,3 +10,5 @@ sudo_commands=(
 
 for c in $user_commands; do; alias sc-$c="systemctl $c"; done
 for c in $sudo_commands; do; alias sc-$c="sudo systemctl $c"; done
+
+alias sc-failed="systemctl --failed"
