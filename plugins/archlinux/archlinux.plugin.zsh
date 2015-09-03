@@ -68,6 +68,7 @@ paclist() {
 
 alias paclsorphans='sudo pacman -Qdt'
 alias pacrmorphans='sudo pacman -Rs $(pacman -Qtdq)'
+alias pacopt='pacman-optimize'
 
 pacdisowned() {
   tmp=${TMPDIR-/tmp}/pacman-disowned-$UID-$$
